@@ -8,7 +8,6 @@ footer.footer
             li= link_to t('.links.twitter'), "#{CatarseSettings[:twitter_url]}", target: '_blank'
             li= link_to t('.links.facebook'), "#{CatarseSettings[:facebook_url]}", target: '_blank'
             li= link_to t('.links.instagram'), "#{CatarseSettings[:instagram_url]}", target: '_blank'
-            li= link_to t('.links.github'), "#{CatarseSettings[:github_url]}", target: '_blank'
             li= link_to t('.links.blog'), "#{CatarseSettings[:blog_url]}", target: '_blank'
             li.zendesk_widget= link_to t('.links.contact'), "#{CatarseSettings[:zendesk_url]}/account/dropboxes/#{CatarseSettings[:zendesk_dropbox_id]}"
       .footer-div
@@ -43,4 +42,4 @@ footer.footer
           = render_facebook_like colorscheme: "dark", width: "171"
     hr
     .row
-        p.copyleft= "#{t('.texts.copyleft')} Catarse, #{DateTime.now.year} | Open source #{link_to 'Catarse @ Github', "#{CatarseSettings[:github_url]}", :class => 'github', target: '_blank'}".html_safe
+        p.copyleft= "#{t('.texts.copyleft')} Catarse, #{DateTime.now.year} |  #{link_to 'Catarse @ Github', "#{CatarseSettings[:github_url]}", :class => 'github', target: '_blank'}".html_safe
