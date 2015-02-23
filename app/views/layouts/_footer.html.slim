@@ -15,6 +15,7 @@ footer.footer
         .footer-list
           h3.footer-title= t('.titles.about')
           ul.footer-list
+            li= link_to t('.links.jobs'), "#{CatarseSettings[:jobs_url]}", target: '_blank'
             li= link_to t('.links.faq'), "#{CatarseSettings[:faq_url]}", target: '_blank'
             li= mail_to CatarseSettings[:email_press], t('layouts.footer.links.press')
             li= link_to t('.links.feedback'), "#{CatarseSettings[:feedback_url]}", target: '_blank'
@@ -43,4 +44,4 @@ footer.footer
           = render_facebook_like colorscheme: "dark", width: "171"
     hr
     .row
-       p.copyleft= "#{t('.texts.copyleft')} Catarse, #{DateTime.now.year} | Open source #{link_to 'Catarse @ Github', "#{CatarseSettings[:github_url]}", :class => 'github', target: '_blank'}".html_safe
+        p.copyleft= "#{t('.texts.copyleft')} Catarse, #{DateTime.now.year} | Open source #{link_to 'Catarse @ Github', "#{CatarseSettings[:github_url]}", :class => 'github', target: '_blank'}".html_safe
