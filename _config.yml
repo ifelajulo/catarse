@@ -1,0 +1,8 @@
+title: vesthub
+description: The first open source crowdfunding platform for creative projects in the world
+google_analytics: UA-60063725-1
+show_downloads: true
+theme: jekyll-theme-modernist
+
+gems:
+  - jekyll-mentions
